@@ -3,12 +3,11 @@ function loginUser(username, password) {
         .then(response => response.json())
         .then(usersData => {
             const authenticatedUser = usersData.find(user => user.username === username && user.password === password);
-
             if (authenticatedUser) {
                 localStorage.setItem('loggedInUser', JSON.stringify(authenticatedUser));
-                alert('Logged in!');
+                alert('Logged in.');
             } else {
-                alert('Invalid credentials. Please try again.');
+                alert('Invalid. Please try again.');
             }
         })
         .catch(error => {
