@@ -15,7 +15,7 @@ textarea {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     background-color: #dad7cd;
     color: #344e41;
 }
@@ -149,6 +149,30 @@ footer {
 
 .article a{
     color: #013220;
+}
+
+.article a:hover{
+    color: #20694f;
+}
+
+.infoPic{
+  width: 30%;
+}
+#msg a{
+  text-decoration: none;
+}
+
+#msg a:hover{
+  color:#4a9667;
+}
+
+#logo{
+  float:left;
+}
+
+#logo img{
+  width:40px;
+  height:40px;
 }
 
 .article a:hover{
