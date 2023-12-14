@@ -6,8 +6,7 @@ function loginUser(username, password) {
 
             if (authenticatedUser) {
                 localStorage.setItem('loggedInUser', JSON.stringify(authenticatedUser));
-                alert('Logged in successfully!');
-                window.location.href = 'index.html'; // Redirect to the main page after login
+                alert('Logged in!');
             } else {
                 alert('Invalid credentials. Please try again.');
             }
