@@ -25,13 +25,11 @@
     </header>
     <div class="container">
         <h1 class="subtitle">Create an Account</h1>
-      <form align="center" id="signup-form">
-        <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username"
-          autocomplete="off"> 
-        <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
-        <input type="password" name="confpass" id="conf-password-field" class="login-form-field"
-          placeholder="Confirm Password">
-        <button onclick="createAccount();">Submit</button>
+      <form id="signup-form" onsubmit="return signupUser()">
+          <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username" autocomplete="off">
+          <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+          <input type="password" name="confpass" id="conf-password-field" class="login-form-field" placeholder="Confirm Password">
+          <button type="submit">Submit</button>
       </form>
     </div>
 </body>
