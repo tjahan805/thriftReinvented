@@ -77,6 +77,5 @@ document.addEventListener('DOMContentLoaded', function () {
 function logoutUser() {
     localStorage.removeItem('loggedInUser');
     alert('Logged out successfully!');
-    // Redirect to the login page after logout (optional)
     window.location.href = 'login.html';
 }
